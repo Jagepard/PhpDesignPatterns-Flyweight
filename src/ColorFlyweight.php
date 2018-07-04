@@ -1,11 +1,10 @@
 <?php
+
+declare(strict_types=1);
+
 /**
- * Date: 05.04.18
- * Time: 15:02
- *
  * @author    : Korotkov Danila <dankorot@gmail.com>
- * @copyright Copyright (c) 2018, Korotkov Danila
- * @license   http://www.gnu.org/licenses/gpl.html GNU GPLv3.0
+ * @license   https://mit-license.org/ MIT
  */
 
 namespace Structural\Flyweight;
@@ -37,14 +36,6 @@ class ColorFlyweight implements FlyweightInterface
      */
     public function render(string $color): string
     {
-        return sprintf("{element:%s; color:%s}\n", $this->getElement(), $color);
-    }
-
-    /**
-     * @return string
-     */
-    public function getElement(): string
-    {
-        return $this->element;
+        return sprintf("{element:%s; color:%s}\n", $this->element, $color);
     }
 }
