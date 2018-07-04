@@ -12,3 +12,6 @@ foreach ($elements as $element) {
     print $factory->getFlyweight($element)->render('green');
 }
 
+foreach ($elements as $element) {
+    print $factory->getFlyweight($element)->render('red');
+}
