@@ -8,3 +8,5 @@
 # Flyweight | [API](https://github.com/Jagepard/PhpDesignPatterns-Flyweight/blob/master/docs.md "Documentation API")
 
 Приспособленец
+
+![Flyweight](https://github.com/Jagepard/PhpDesignPatterns-Flyweight/blob/master/UML.png)
