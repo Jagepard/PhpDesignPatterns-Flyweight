@@ -5,5 +5,6 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-498e7f.svg)](https://mit-license.org/)
 -----
 
-# Flyweight
+# Flyweight | [API](https://github.com/Jagepard/PhpDesignPatterns-Flyweight/blob/master/docs.md "Documentation API")
+
 Приспособленец
