@@ -17,7 +17,6 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
  */
 class FlyweightTest extends PHPUnit_Framework_TestCase
 {
-
     public function testFlyweight()
     {
         $factory  = new FlyweightFactory();
