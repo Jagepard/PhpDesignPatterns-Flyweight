@@ -15,11 +15,10 @@ namespace Structural\Flyweight;
  */
 class ColorFlyweight implements FlyweightInterface
 {
-
     /**
      * @var string
      */
-    protected $element;
+    private $element;
 
     /**
      * ColorFlyweight constructor.
@@ -36,6 +35,14 @@ class ColorFlyweight implements FlyweightInterface
      */
     public function render(string $color): string
     {
-        return sprintf("{element:%s; color:%s}\n", $this->element, $color);
+        return sprintf("{element:%s; color:%s}\n", $this->getElement(), $color);
+    }
+
+    /**
+     * @return string
+     */
+    public function getElement(): string
+    {
+        return $this->element;
     }
 }

@@ -15,11 +15,10 @@ namespace Structural\Flyweight;
  */
 class FlyweightFactory
 {
-
     /**
      * @var array
      */
-    protected $flyweights = [];
+    private $flyweights = [];
 
     /**
      * @param string $element
