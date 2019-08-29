@@ -7,10 +7,6 @@
 
 namespace Structural\Flyweight;
 
-/**
- * Interface FlyweightInterface
- * @package Structural\Flyweight
- */
 interface FlyweightInterface
 {
     /**

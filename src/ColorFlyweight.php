@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Structural\Flyweight;
 
-/**
- * Class ColorFlyweight
- * @package Structural\Flyweight
- */
 class ColorFlyweight implements FlyweightInterface
 {
     /**

@@ -12,9 +12,6 @@ namespace Structural\Flyweight\Tests;
 use Structural\Flyweight\FlyweightFactory;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-/**
- * Class SingletonsPoolTest
- */
 class FlyweightTest extends PHPUnit_Framework_TestCase
 {
     public function testFlyweight()
