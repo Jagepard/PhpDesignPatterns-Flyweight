@@ -6,6 +6,7 @@
 -----
 
 # Flyweight | [API](https://github.com/Jagepard/PhpDesignPatterns-Flyweight/blob/master/docs.md "Documentation API")
+```php run``` Запустить исполнение шаблона в терминале
 
 Приспособленец
 
