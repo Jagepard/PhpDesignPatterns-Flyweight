@@ -7,6 +7,14 @@
 
 # Flyweight | [API](https://github.com/Jagepard/PhpDesignPatterns-Flyweight/blob/master/docs.md "Documentation API")
 
-Приспособленец
+```php main.php``` execute in terminal
 
-![Flyweight](https://github.com/Jagepard/PhpDesignPatterns-Flyweight/blob/master/UML.png)
+## Result:
+```
+{element:table; color:green}
+{element:tr; color:green}
+{element:td; color:green}
+{element:table; color:red}
+{element:tr; color:red}
+{element:td; color:red}
+```
