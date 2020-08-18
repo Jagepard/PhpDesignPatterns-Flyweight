@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
 
 namespace Structural\Flyweight\Tests;
@@ -20,11 +20,17 @@ class FlyweightTest extends PHPUnit_Framework_TestCase
         $elements = ['table', 'tr', 'td'];
 
         foreach ($elements as $element) {
-            $this->assertEquals("{element:$element; color:black}\n", $factory->getFlyweight($element)->render('black'));
+            $this->assertEquals(
+                "{element:$element; color:black}\n",
+                $factory->getColorFlyweight($element)->render('black')
+            );
         }
 
         foreach ($elements as $element) {
-            $this->assertEquals("{element:$element; color:red}\n", $factory->getFlyweight($element)->render('red'));
+            $this->assertEquals(
+                "{element:$element; color:red}\n",
+                $factory->getColorFlyweight($element)->render('red')
+            );
         }
     }
 }
