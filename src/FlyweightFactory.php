@@ -3,24 +3,17 @@
 declare(strict_types=1);
 
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
 
 namespace Structural\Flyweight;
 
 class FlyweightFactory
 {
-    /**
-     * @var array
-     */
-    private $flyweights = [];
+    private array $flyweights = [];
 
-    /**
-     * @param string $element
-     * @return ColorFlyweight
-     */
-    public function getFlyweight(string $element): ColorFlyweight
+    public function getColorFlyweight(string $element): ColorFlyweight
     {
         if (!array_key_exists($element, $this->flyweights)) {
             $this->flyweights[$element] = new ColorFlyweight($element);
