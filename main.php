@@ -9,9 +9,9 @@ $elements = ["table", "tr", "td"];
 $factory  = new FlyweightFactory();
 
 foreach ($elements as $element) {
-    print $factory->getFlyweight($element)->render("green");
+    print $factory->getColorFlyweight($element)->render("green");
 }
 
 foreach ($elements as $element) {
-    print $factory->getFlyweight($element)->render("red");
+    print $factory->getColorFlyweight($element)->render("red");
 }
