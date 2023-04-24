@@ -13,6 +13,14 @@ class FlyweightFactory
 {
     private array $flyweights = [];
 
+    /**
+     * Applies a color to an element
+     * -----------------------------
+     * Применяет цвет к элементу
+     *
+     * @param  string         $element
+     * @return ColorFlyweight
+     */
     public function getColorFlyweight(string $element): ColorFlyweight
     {
         if (!array_key_exists($element, $this->flyweights)) {
