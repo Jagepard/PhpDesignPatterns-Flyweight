@@ -9,5 +9,9 @@ namespace Structural\Flyweight;
 
 interface FlyweightInterface
 {
+    /**
+     * @param  string $color
+     * @return string
+     */
     public function render(string $color): string;
 }
