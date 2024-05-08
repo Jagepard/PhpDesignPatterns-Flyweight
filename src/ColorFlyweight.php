@@ -11,8 +11,6 @@ namespace Structural\Flyweight;
 
 class ColorFlyweight implements FlyweightInterface
 {
-    private string $element;
-
     /**
      * Sets an element
      * ---------------
@@ -20,10 +18,7 @@ class ColorFlyweight implements FlyweightInterface
      *
      * @param  string $element
      */
-    public function __construct(string $element)
-    {
-        $this->element = $element;
-    }
+    public function __construct(private string $element){}
 
     /**
      * Displays the result of applying a color to an element
